@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Basic Styling*/
+body {
+  font-family: 'Kalam', cursive;
+  background-image: url(../../assets/images/contact-background.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h2 {
+  color: white;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 12%;
+}
+
+input[type=tel], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 12%;
+}
+
+input[type=submit] {
+  font-family: 'Kalam', cursive;
+  font-size: medium;
+  margin-left: 178px;
+  width: 25%;
+  border-radius: 18%;
+  background-color: transparent;
+  color: white;
+  margin-top: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  font-size: large;
+  width: 40%;
+  padding: 19px;
+  margin-left: 459px;
+}
+
+label {
+  color: white;
+  margin-left: 26px;
+  padding-bottom: 100px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Footer Styling*/
+footer {
+  color: white;
+  margin-top: 38%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

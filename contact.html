@@ -3,17 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>TLRMD Contact Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/contact.css">
   </head>
   <body>
-          <!--Contact -->
-    <form class="form">
-        <label class="labels" for="fname">First Name</label>
-        <input type="text" class="form" name="firstname" placeholder="First Name">
-        <label class="labels" for="lname">Last Name</label>
-        <input type="text" class="form" name="lastname" placeholder="Last Name">
-        <label class="labels" for="subject">What Can We Do For You!</label>
-        <textarea class="form" name="subject" placeholder="Let Us Know What You Need Done" style="height:170px"></textarea>
-        <input type="submit" value="Quote Me" id="quote-me">
+    <div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        <input type="submit" value="Submit">
       </form>
+      <footer>
+      <p>Email: tlrbaltimore@gmail.com &nbsp; &nbsp; &nbsp;  Phone: +1(718) 930-4987</footer>
+    </div>
+  </div>
+</div>
   </body>
 </html>
